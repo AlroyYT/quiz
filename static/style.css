@@ -18,7 +18,7 @@ h1 {
 .container {
     max-width: 1700px;
     margin: 30px auto;
-    transform: translateY(10%);
+    transform: translate(-10%,5%);
     padding: 20px;
     color:black;
     font-size:24px;
@@ -90,7 +90,7 @@ button:hover {
 }
 /* Sidebar Styles */
 .sidebar {
-    width: 250px;
+    width: 15%;
     background-color: #f0f0f0; /* Light grey background */
     color: white;
     height: 100vh;
@@ -187,13 +187,23 @@ button:hover {
 }
 
 /* Profile and Logout */
+.maincontent1 {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 .profile {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    transform: translate(230%,-10%);
+    transform: translate(220%,-10%);
     flex-direction: column;
 }
 
@@ -217,8 +227,8 @@ button:hover {
     color: #333;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    transform: translate(70%,-70%);
+    transition: background-color 0.3s ease; 
+    transform: translate(130%,-30%);
 }
 
 .profile a:hover {
